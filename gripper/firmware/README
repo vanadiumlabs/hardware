@@ -1,0 +1,27 @@
+***********************************************************
+
+                    SG-1 GRIPPER README
+
+***********************************************************
+
+
+Firmware Installation
+
+  1) Install avr-gcc, avrdude. In Ubuntu, this amounts to:
+        sudo apt-get install gcc-avr avrdude
+  2) Changed directory into the firmware directory.
+  3) Run 'make program' to both compile and download code.
+  
+ Settings:
+ -The makefile is defined for an Mega 328. If you are using
+  a different chip, you will have to change the definition
+  in (2) places (both compilation target and ISP target).
+ -To set a different ID (the default is 8), change line
+  40 of ax_device.c to the desired ID.
+
+
+Interfacing with the gripper
+
+ -The firmware currently does not store persistent settings,
+  so the ID must be hardcoded.
+

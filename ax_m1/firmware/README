@@ -1,0 +1,79 @@
+***********************************************************
+
+                        AX-M1 README
+
+***********************************************************
+
+
+Firmware Installation
+
+  1) Install avr-gcc, avrdude. In Ubuntu, this amounts to:
+        sudo apt-get install gcc-avr avrdude
+  2) Changed directory into the firmware directory.
+  3) Run 'make program' to both compile and download code.
+  
+ Settings:
+ -The makefile is defined for an Mega 168. If you are using
+  a different chip, you will have to change the definition
+  in (2) places (both compilation target and ISP target).
+ -To set a different ID (the default is 42), change line
+  40 of ax_device.c to the desired ID.
+
+
+Interfacing with the AX-M1
+
+ -The firmware currently does not store persistent settings,
+  so the ID must be hardcoded.
+
+ 
+ Using the SSR
+ -The SSR (motor driver) is accessed through GOAL_POSITION
+  registers. Values >512 turn the SSR on. ArbotiX users
+  can do the following:
+
+    ON:  SetPosition(42, 1023);
+    OFF: SetPosition(42, 0);
+
+
+ Using the Digital IO
+ -There are 6 IO, which can be used as digital inputs, 
+  digital outputs, or analog inputs. When used as digital
+  IO, there are two registers used: direction (register 56)
+  and value (register address 57):
+  
+    #define REG_DIGITAL_DIR     56
+    #define REG_DIGITAL_VAL     57
+
+    ex. Set only digital 0 as output, but low:
+    ax12SetRegister(42, REG_DIGITAL_DIR, 0x01);
+    ax12SetRegister(42, REG_DIGITAL_VAL, 0x00);
+
+  When used as inputs, setting the value to "high" will 
+  enable an internal pull up. You can read the value of the
+  pins by reading from the value register, and then testing
+  bits:
+
+    int val = ax12GetRegister(42, REG_DIGITAL_VAL, 1);
+    // test if pin 3 is high
+    if(val&(1<<3)){
+        ...
+    }
+    
+  For users familiar with AVR architecture, direction and
+  value map directly to the appropriate DDRx and PORTx pin.
+  Reading from value maps to PINx. 
+
+
+ Reading the Analog Inputs
+ -Each analog pin maps to an 8-bit register. Reading from
+  the register will return the value of the analog pin:
+    
+    #define REG_ANALOG0     50
+    #define REG_ANALOG1     51
+    #define REG_ANALOG2     52
+    #define REG_ANALOG3     53
+    #define REG_ANALOG4     54
+    #define REG_ANALOG5     55
+
+   int adc1 = ax12GetRegister(42, REG_ANALOG0, 1);
+

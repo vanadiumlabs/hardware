@@ -1,0 +1,337 @@
+After 34 minutes of runtime, moving the arm using the warehouse.
+---
+header: 
+  seq: 2062
+  stamp: 
+    secs: 1318384816
+    nsecs: 930559703
+  frame_id: ''
+status: 
+  - 
+    level: 0
+    name: /Controllers
+    message: OK
+    hardware_id: ''
+    values: 
+      - 
+        key: arm_controller
+        value: OK
+      - 
+        key: base_controller
+        value: OK
+      - 
+        key: head_controller
+        value: OK
+  - 
+    level: 0
+    name: /Controllers/arm_controller
+    message: OK
+    hardware_id: ''
+    values: 
+      - 
+        key: State
+        value: Not Active
+  - 
+    level: 0
+    name: /Controllers/base_controller
+    message: OK
+    hardware_id: ''
+    values: 
+      - 
+        key: Left
+        value: 1
+      - 
+        key: Right
+        value: 10
+      - 
+        key: dX
+        value: 0.0
+      - 
+        key: dR
+        value: 0.0
+  - 
+    level: 0
+    name: /Controllers/head_controller
+    message: OK
+    hardware_id: ''
+    values: 
+      - 
+        key: State
+        value: Not Active
+  - 
+    level: 0
+    name: /Joints
+    message: OK
+    hardware_id: ''
+    values: 
+      - 
+        key: arm_elbow_flex_joint
+        value: OK
+      - 
+        key: arm_shoulder_lift_joint
+        value: OK
+      - 
+        key: arm_shoulder_pan_joint
+        value: OK
+      - 
+        key: arm_wrist_flex_joint
+        value: OK
+      - 
+        key: arm_wrist_roll_joint
+        value: OK
+      - 
+        key: head_pan_joint
+        value: OK
+      - 
+        key: head_tilt_joint
+        value: OK
+      - 
+        key: l_gripper_joint
+        value: OK
+      - 
+        key: r_gripper_joint
+        value: OK
+  - 
+    level: 0
+    name: /Joints/arm_elbow_flex_joint
+    message: OK
+    hardware_id: ''
+    values: 
+      - 
+        key: Position
+        value: 0.812796764692
+      - 
+        key: Temperature
+        value: 41
+      - 
+        key: Voltage
+        value: 12.7
+      - 
+        key: Reads
+        value: 17071.0
+      - 
+        key: Error Rate
+        value: 0.0%
+      - 
+        key: Torque
+        value: ON
+  - 
+    level: 0
+    name: /Joints/arm_shoulder_lift_joint
+    message: OK
+    hardware_id: ''
+    values: 
+      - 
+        key: Position
+        value: 0.827710466797
+      - 
+        key: Temperature
+        value: 49
+      - 
+        key: Voltage
+        value: 12.6
+      - 
+        key: Reads
+        value: 17071.0
+      - 
+        key: Error Rate
+        value: 0.0%
+      - 
+        key: Torque
+        value: ON
+  - 
+    level: 0
+    name: /Joints/arm_shoulder_pan_joint
+    message: OK
+    hardware_id: ''
+    values: 
+      - 
+        key: Position
+        value: -0.337475773335
+      - 
+        key: Temperature
+        value: 33
+      - 
+        key: Voltage
+        value: 12.6
+      - 
+        key: Reads
+        value: 17071.0
+      - 
+        key: Error Rate
+        value: 0.0%
+      - 
+        key: Torque
+        value: ON
+  - 
+    level: 0
+    name: /Joints/arm_wrist_flex_joint
+    message: OK
+    hardware_id: ''
+    values: 
+      - 
+        key: Position
+        value: 1.28854386182
+      - 
+        key: Temperature
+        value: 32
+      - 
+        key: Voltage
+        value: 12.4
+      - 
+        key: Reads
+        value: 17071.0
+      - 
+        key: Error Rate
+        value: 0.0%
+      - 
+        key: Torque
+        value: ON
+  - 
+    level: 0
+    name: /Joints/arm_wrist_roll_joint
+    message: OK
+    hardware_id: ''
+    values: 
+      - 
+        key: Position
+        value: 0.0562459622225
+      - 
+        key: Temperature
+        value: 43
+      - 
+        key: Voltage
+        value: 12.3
+      - 
+        key: Reads
+        value: 17071.0
+      - 
+        key: Error Rate
+        value: 0.0%
+      - 
+        key: Torque
+        value: ON
+  - 
+    level: 0
+    name: /Joints/head_pan_joint
+    message: OK
+    hardware_id: ''
+    values: 
+      - 
+        key: Position
+        value: 0.751650586064
+      - 
+        key: Temperature
+        value: 37
+      - 
+        key: Voltage
+        value: 12.4
+      - 
+        key: Reads
+        value: 17071.0
+      - 
+        key: Error Rate
+        value: 0.0%
+      - 
+        key: Torque
+        value: ON
+  - 
+    level: 0
+    name: /Joints/head_tilt_joint
+    message: OK
+    hardware_id: ''
+    values: 
+      - 
+        key: Position
+        value: 0.470420774952
+      - 
+        key: Temperature
+        value: 40
+      - 
+        key: Voltage
+        value: 12.3
+      - 
+        key: Reads
+        value: 17071.0
+      - 
+        key: Error Rate
+        value: 0.0%
+      - 
+        key: Torque
+        value: ON
+  - 
+    level: 0
+    name: /Joints/l_gripper_joint
+    message: OK
+    hardware_id: ''
+    values: 
+      - 
+        key: Position
+        value: -0.199417502425
+      - 
+        key: Temperature
+        value: 45
+      - 
+        key: Voltage
+        value: 12.3
+      - 
+        key: Reads
+        value: 17071.0
+      - 
+        key: Error Rate
+        value: 0.0%
+      - 
+        key: Torque
+        value: ON
+  - 
+    level: 0
+    name: /Joints/r_gripper_joint
+    message: OK
+    hardware_id: ''
+    values: 
+      - 
+        key: Position
+        value: -0.204530771718
+      - 
+        key: Temperature
+        value: 42
+      - 
+        key: Voltage
+        value: 12.4
+      - 
+        key: Reads
+        value: 17071.0
+      - 
+        key: Error Rate
+        value: 0.0%
+      - 
+        key: Torque
+        value: ON
+  - 
+    level: 0
+    name: /Power System
+    message: OK
+    hardware_id: ''
+    values: 
+      - 
+        key: Laptop Battery
+        value: OK
+  - 
+    level: 0
+    name: /Power System/Laptop Battery
+    message: OK
+    hardware_id: ''
+    values: 
+      - 
+        key: Voltage (V)
+        value: 12.072
+      - 
+        key: Current (A)
+        value: 0.0
+      - 
+        key: Charge (Ah)
+        value: 4.60914669125
+      - 
+        key: Capacity (Ah)
+        value: 46.2614314115
+---
