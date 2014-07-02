@@ -1,0 +1,15 @@
+<language en>
+<h3>ServoStiK</h3>
+Controller board based on ATMEGA644P with  bioloid and RX bus headers, servo-style headers for several I/O, and FTDI driver.
+
+<h5>Features Include</h5>
+<ul>
+  <li>Control RX & AX servos at the same time. Board automatically configures at startup.</li>
+  <li>Sync-Read capability, for higher bandwidth.</li>
+  <li>10 I/O, including 8 analog inputs and 2 hobby servo outputs.</li>
+  <li>Seperate power buses for AX and RX servos.</li>
+  <li>Small size: 3.125"x1.125".</li>
+</ul>
+
+Copyright 2010 Michael E Ferguson
+</language en>
