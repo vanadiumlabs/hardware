@@ -1,6 +1,8 @@
-## ArbotiX Rev. A
+## ArbotiX Rev. B
 
-This folder contains the EAGLE 5.0 CAD for the first revision of the ArbotiX.
+This folder contains the EAGLE 5.0 CAD for the production version of the
+now discontinued original ArbotiX. In addition, the zip file contains the
+gerber files as the board was last manufactured.
 
 ## License
 

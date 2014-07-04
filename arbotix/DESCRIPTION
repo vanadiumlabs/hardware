@@ -2,5 +2,12 @@
 <h3>arbotiX robocontroller</h3>
 Controller board based on ATMEGA644P, with dual motor drivers, bioloid bus headers, servo-style headers for all I/O, and XBEE wireless radio. Sanguino-compatible.<br><br>
 Sized to connect to Bioloid case.<br>
+<br>
+<b>Rev. B Changes</b><br>
+Added R1 of 10K to reset Circuit.
+Moved J2 of reset circuit to a better location.<br>
+J1 merged with S1 header.<br>
+Larger traces on power.<br>
+Fixed silkscreen on Servo A/B.<br><br>
 Copyright 2009 Michael E Ferguson
 </language en>
