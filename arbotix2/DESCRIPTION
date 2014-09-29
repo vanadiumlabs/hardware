@@ -1,0 +1,6 @@
+<language en>
+<h3>ArbotiX2 robocontroller</h3>
+Controller board based on ATMEGA644P, with dual motor drivers, bioloid bus headers, servo-style headers for all I/O, and XBEE wireless radio. Sanguino-compatible.<br><br>
+Sized to connect to Bioloid case.<br>
+Copyright 2009 Michael E Ferguson
+</language en>
